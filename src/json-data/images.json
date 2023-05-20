@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-1.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 2,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-80.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 3,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-90.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 4,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-114.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 5,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-197.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 6,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-178.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 7,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-18.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 8,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-5.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 9,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-65.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 10,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-171.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 11,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-185.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 12,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-296.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 14,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-177.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 13,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-185.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 15,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-219.jpg",
+        "orientaton": "portrait"
+    },
+    {
+        "id": 16,
+        "name": "portfolio-image1",
+        "path": "/src/assets/Portfolio-228.jpg",
+        "orientaton": "portrait"
+    }
+]

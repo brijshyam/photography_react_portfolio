@@ -1,0 +1,90 @@
+.grid {
+    &_container {
+        margin-top: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(10px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+        gap: 1em;
+        padding: 1em;
+        background-color: $gridGalleryBGColor;
+        background-image: url("../assets/Portfolio-197.jpg"),
+            url("../assets/Portfolio-185");
+        background-size: contain;
+        background-blend-mode: multiply;
+        // .click-state {
+        //     position: fixed;
+        //     left: 0;
+        //     top: 0;
+        //     width: auto;
+        //     height: 100dvh;
+        //     background-image: $backgroundColor;
+        //     backdrop-filter: blur(1px);
+        //     color: white;
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: center;
+        //     // padding: 0 5vw;
+        //     transform-origin: top;
+        //     animation: myAnim 1s ease 0s 1 normal forwards;
+        // }
+        .grid-item {
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            grid-row: span 3;
+            grid-column: span 4;
+            &_title {
+                font-size: 0.8rem;
+                color: #fff;
+            }
+            img {
+                border-bottom: 3px solid $imageBorder;
+            }
+        }
+    }
+}
+
+// AFTER CONTAINER
+/* &_item {
+    background-color: #fff;
+    &_title {
+        font-size: 0.8em;
+        margin-top: 0 auto;
+        color: #fff;
+    }
+    .image-wrapper {
+        display: flex;
+    }
+} */
+
+//inside of container
+// background: url("/src/assets/Portfolio-48.jpg"),
+//     url("/src/assets/Portfolio-197.jpg"),
+//     url("/src/assets/Portfolio-80.jpg");
+// background-size: contain;
+// background-repeat: no-repeat;
+
+//pseudo of click-state
+/* .image {
+                height: auto;
+                &::after {
+                    content: "X";
+                    font-family: sans-serif;
+                    background-color: red;
+                    filter: blur(0.1px);
+                    color: white;
+                    position: absolute;
+                    right: 50%;
+                    bottom: 5vh;
+                    border-radius: 50%;
+                    width: 20px;
+                    height: 20px;
+                    z-index: 99;
+                    text-align: center;
+                    scale: 1.2;
+                    padding: 0.1em;
+                }
+            } */

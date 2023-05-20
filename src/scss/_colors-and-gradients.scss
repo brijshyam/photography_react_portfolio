@@ -1,0 +1,217 @@
+$primaryColor: #dedede;
+$primaryLightColor: #fff;
+$primaryDark: #000000;
+// $callToAction: #941452;
+$callToAction: #c11a6b;
+$secondaryColor: #a75c3f;
+$secondaryLighter: #b77412;
+$blink-call: #f0c22b;
+$card-color: rgba(172, 172, 172, 0.5);
+$emoji-fill: rgb(239, 241, 69);
+$imageBorder: rgb(155, 111, 0);
+$gridGalleryBGColor: rgba(0, 0, 0, 0.8);
+$lightBoxOverlayColor: #000000bd;
+$successMsgColor: rgb(11, 146, 11);
+$menu-gradient: linear-gradient(
+    to right top,
+    #eaff20,
+    #ffba00,
+    #f6772f,
+    #d03d48,
+    #941452
+);
+$callToAction-Btn-Gradient: linear-gradient(
+    to left top,
+    #eaff20,
+    #ffba00,
+    #f6772f,
+    #d03d48,
+    #941452
+);
+$card-soft-gradient: linear-gradient(
+    to bottom,
+    #aaaaaa,
+    #b4b4b4,
+    #bebebe,
+    #c8c8c8,
+    #d2d2d2,
+    #d1d1d1,
+    #d0d0d0,
+    #cfcfcf,
+    #c3c3c3,
+    #b7b7b7,
+    #ababab,
+    #9f9f9f
+);
+
+$lg-gutter: 4rem;
+$md-gutter: 2.5rem;
+$sm-gutter: 1.5rem;
+$xsm-gutter: 0.8rem;
+
+$m-top: 1rem;
+$logo-h-w: 2.5rem;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+@keyframes blink {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(1.15);
+        color: $callToAction;
+    }
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(1.02);
+        color: $callToAction;
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(1.2);
+        color: $callToAction;
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
+@keyframes rotate-infinite {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes vibrate-infinite {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes Entry {
+    0% {
+        opacity: 0.7;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes Exit {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+@keyframes fade-up {
+    0% {
+        opacity: 1;
+        transform: rotateX(0deg);
+        transform-origin: top;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotateX(-100deg);
+        transform-origin: top;
+    }
+}
+@keyframes fade-pull-up {
+    0% {
+        opacity: 0;
+        transform: rotateX(-100deg);
+        transform-origin: top;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+        transform-origin: top;
+    }
+}
+@keyframes underline-slide {
+    0% {
+        opacity: 0;
+        transform: rotateY(100deg);
+        transform-origin: left;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(0);
+        transform-origin: left;
+    }
+}
+@keyframes reveal-left {
+    0% {
+        transform: scaleX(0.3);
+        transform-origin: 0% 0%;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: 0% 0%;
+    }
+}
+@keyframes shake-back-n-forth {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
+}

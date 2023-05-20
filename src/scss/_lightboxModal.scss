@@ -1,0 +1,43 @@
+.display-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100dvh;
+    background-color: $lightBoxOverlayColor;
+    height: 100dvh;
+    width: 100vw;
+    transform: scale(0);
+    animation: fade-up 0.5s ease 0s normal forwards;
+}
+.display-block {
+    transform: scale(1);
+    animation: fade-pull-up 0.5s ease 0s normal forwards;
+    height: 100dvh;
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    picture {
+        margin: 0 $xsm-gutter;
+        position: relative;
+        .close-btn {
+            cursor: pointer;
+            font-size: 1rem;
+            position: fixed;
+            right: 50%;
+            bottom: 2%;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 0, 0.5);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,296 @@
+.section-two {
+    margin: $xsm-gutter $xsm-gutter 0 $xsm-gutter;
+    // overflow-x: hidden;
+    &_welcome2 {
+        color: $secondaryLighter;
+        font-size: 0.9rem;
+        margin-bottom: $xsm-gutter;
+        font-family: monospace;
+    }
+    .btn {
+        &-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            .curiosity-para {
+                color: lighten($color: $primaryDark, $amount: 20%);
+                margin-bottom: $xsm-gutter;
+                margin-left: $sm-gutter;
+            }
+            .discuss-container {
+                // border: 1px solid red;
+                height: 15vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-image: $card-soft-gradient;
+                margin: 0;
+                margin-left: -$xsm-gutter;
+                margin-right: -$xsm-gutter;
+            }
+        }
+        &_entrance {
+            padding: 1rem;
+            margin: 0 auto;
+            margin-bottom: $xsm-gutter;
+            outline: 0px;
+            background: lighten($color: $callToAction, $amount: 25);
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            border: none;
+            color: lighten($color: $primaryDark, $amount: 15%);
+        }
+        &_discuss-now {
+            padding: 1rem;
+            margin: 0 4rem;
+            outline: 0px;
+            background-image: $callToAction-Btn-Gradient;
+            text-align: center;
+            font-weight: 800;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            position: relative;
+            overflow: hidden;
+            &::after {
+                content: "";
+                width: 150vw;
+                height: 105%;
+                position: absolute;
+                left: 10vw;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: -webkit-linear-gradient(
+                    left,
+                    rgba(233, 22, 22, 0) 0%,
+                    rgba(175, 0, 161, 0.8) 50%,
+                    rgba(128, 186, 232, 0) 99%,
+                    rgba(125, 185, 232, 0) 100%
+                );
+                animation: slide 2s infinite normal ease;
+            }
+
+            @keyframes slide {
+                0% {
+                    transform: translateX(-100%);
+                }
+                100% {
+                    transform: translateX(75vw);
+                }
+            }
+        }
+    }
+    .letter-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: fit-content;
+        overflow: hidden;
+        .letter {
+            margin: $md-gutter 0;
+            display: inline;
+            font-size: 7rem;
+            font-weight: 900;
+            font-family: "Josefin Sans", sans-serif;
+            color: $secondaryColor;
+        }
+        .B {
+            z-index: -2;
+        }
+        .E {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            opacity: 75%;
+            -webkit-text-stroke: 3px black;
+            -webkit-text-fill-color: transparent;
+        }
+        .A {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .U {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        .T {
+            grid-column: 1/2;
+            grid-row: 5/6;
+            -webkit-text-stroke: 3px black;
+            -webkit-text-fill-color: transparent;
+        }
+        .Y {
+            grid-column: 1/2;
+            grid-row: 6/-1;
+        }
+        .N {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            color: $primaryDark;
+        }
+        .D {
+            grid-column: 3/-1;
+            grid-row: 3/4;
+            color: $primaryDark;
+            -webkit-text-stroke: 3px black;
+            -webkit-text-fill-color: transparent;
+        }
+        .R {
+            transform: rotateY(-180deg);
+            grid-column: 2/3;
+            grid-row: 5/6;
+            color: $primaryDark;
+            text-align: right;
+            -webkit-text-fill-color: $secondaryLighter;
+            z-index: -3;
+        }
+        .Aagain {
+            transform: rotateY(-180deg);
+            grid-column: 3/-1;
+            grid-row: 5/6;
+            color: $primaryDark;
+            text-align: right;
+            -webkit-text-fill-color: $secondaryLighter;
+        }
+        .skew-image1 {
+            background: url("../assets/Portfolio-169.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: -1rem;
+            position: absolute;
+            top: 8rem;
+            left: -0rem;
+            height: 300px;
+            width: 200px;
+            z-index: -1;
+            grid-column: 1/2;
+            grid-row: 1/3;
+            transform: rotate(-20deg);
+            transform-origin: left top;
+        }
+        .skew-image2 {
+            background: url("../assets/Portfolio-222.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: -1rem;
+            position: absolute;
+            top: 9rem;
+            left: 60vw;
+            overflow: hidden;
+            height: 200px;
+            width: 200px;
+            z-index: -1;
+            grid-column: 1/2;
+            grid-row: 1/3;
+            transform: rotate(0deg);
+            transform-origin: left top;
+            z-index: inherit;
+        }
+        .skew-image3 {
+            background: url("../assets/Portfolio-178.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            position: absolute;
+            top: 0rem;
+            left: 18vw;
+            scale: 1.25;
+            height: 200px;
+            width: 200px;
+            z-index: -1;
+            grid-column: 1/2;
+            grid-row: 4/6;
+            transform: rotate(-9deg);
+            transform-origin: left top;
+            z-index: inherit;
+        }
+        .skew-image4 {
+            background: url("../assets/Portfolio-48.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            position: absolute;
+            // outline: 1px solid red;
+            top: -4rem;
+            left: 50vw;
+            height: 150px;
+            width: 180px;
+            scale: 1.5;
+            z-index: -1;
+            grid-column: 1/2;
+            grid-row: 6/-1;
+            transform: rotate(12deg);
+            transform-origin: right top;
+            z-index: -2;
+        }
+    }
+    &_bottom-container {
+        overflow: hidden;
+        margin: 0 -0.8rem;
+        .quote-container {
+            width: clamp(100px, 60vw, 500px);
+            height: clamp(50px, 20vh, 400px);
+            background-color: $card-color;
+            border-bottom: 1px solid $primaryDark;
+            // border-bottom-left-radius: 50%;
+            // border-bottom-right-radius: 50%;
+            margin: auto;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &::after {
+                $conten-size: 10rem;
+                content: "\201c";
+                font-size: $conten-size;
+                position: absolute;
+                width: calc($conten-size - 0.5 * $conten-size);
+                height: calc($conten-size - 0.5 * $conten-size);
+                display: flex;
+                flex-shrink: 0;
+                align-items: center;
+                left: -2rem;
+                right: 0;
+                top: 2.2rem;
+                bottom: 0;
+                transform: rotate(-25deg);
+                transform-origin: left top;
+                color: $callToAction;
+            }
+            .quote1 {
+                width: 100%;
+                font-size: 1.2rem;
+                margin: $xsm-gutter;
+                text-align: center;
+                overflow: hidden;
+                position: relative;
+            }
+            .animate-enter {
+                animation: Entry 0.5s ease-in normal forwards;
+            }
+            .animate-exit {
+                animation: Exit 0.5s ease-in 3.5s normal forwards;
+            }
+        }
+        .image-container {
+            margin-top: -1.5rem;
+            width: 100vw;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

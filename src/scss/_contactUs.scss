@@ -1,0 +1,103 @@
+.contactUs {
+    &_wrapper {
+        height: 120vh;
+        background-color: $card-color;
+        margin: $xsm-gutter;
+        margin-bottom: $md-gutter;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: $sm-gutter;
+        .form-group {
+            // background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &_image {
+                // outline: 3px solid lawngreen;
+                // margin: $md-gutter 0;
+                margin-bottom: $sm-gutter;
+                position: relative;
+                &::after {
+                    // content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 110%;
+                    bottom: 0;
+                    height: 2px;
+                    background: lighten($color: $primaryDark, $amount: 30%);
+                    width: 100%;
+                    scale: 1.13;
+                    margin: 1rem 0;
+                }
+            }
+            &_form-container {
+                // outline: 3px solid black;
+                height: clamp(300px, 45vh, 60vh);
+                .form-control {
+                    // outline: 2px solid green;
+                    height: inherit;
+                    width: 70vw;
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    label {
+                        margin: $xsm-gutter 0;
+                        color: lighten($color: $primaryDark, $amount: 30%);
+                    }
+                    input {
+                        padding: 0.7rem;
+                        width: 100%;
+                        // border-radius: 10px;
+                        outline: none;
+                        border: 0px;
+                        border-bottom: 2px solid $secondaryColor;
+                        margin: 0.5rem 0;
+                    }
+                    textarea {
+                        width: 100%;
+                        padding: $xsm-gutter;
+                        height: 15vh;
+                        outline: none;
+                        border: 0px;
+                        border-bottom: 2px solid $secondaryColor;
+                    }
+                    .submit-btn {
+                        padding: 0.5rem 0;
+                        background: $callToAction;
+                        color: $primaryColor;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        width: 50%;
+                        border-radius: 5px;
+                        border: none;
+                        margin: auto;
+                        margin-top: $xsm-gutter;
+                    }
+                    .success-msg {
+                        margin: auto;
+                        margin: $xsm-gutter 0;
+                        color: $successMsgColor;
+                    }
+                }
+            }
+        }
+    }
+    &_form-header {
+        font-weight: 800;
+        font-size: 3rem;
+        // margin-bottom: $sm-gutter;
+        font-family: Biko;
+        text-decoration: underline;
+    }
+    &_form-description {
+        text-align: justify;
+        margin: $sm-gutter 0;
+        font-size: 1rem;
+        color: lighten($color: $primaryDark, $amount: 30%);
+    }
+}

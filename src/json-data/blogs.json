@@ -1,0 +1,18 @@
+[
+    {
+        "key": 1,
+        "image": "/src/assets/blog-images/camera-1.jpg",
+        "heading": "Lorem ipsum dolor sit amet consectet",
+        "readingTime": "5",
+        "snippet": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quidem amet illum, a deserunt vel laboriosam",
+        "mainContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quidem amet illum, a deserunt vel laboriosam"
+    },
+    {
+        "key": 2,
+        "image": "/src/assets/blog-images/girl-with-camera.jpg",
+        "heading": "Lorem ipsum dolor sit amet consectet",
+        "readingTime": "5",
+        "snippet": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quidem amet illum, a deserunt vel laboriosam",
+        "mainContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quidem amet illum, a deserunt vel laboriosam"
+    }
+]

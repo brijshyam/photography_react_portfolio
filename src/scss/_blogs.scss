@@ -1,0 +1,96 @@
+.blogs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: $xsm-gutter;
+    .blog-card {
+        $sm-header-color: lighten(
+            $color: $primaryDark,
+            $amount: 20%,
+        );
+        margin: $md-gutter $xsm-gutter 0 $xsm-gutter;
+        height: fit-content;
+        padding: $xsm-gutter 0;
+        width: 100%;
+        border-radius: 10px;
+        background-color: $card-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 4px 6px 10px 0px lighten($color: $primaryDark, $amount: 50%);
+        filter: saturate(0);
+        &_image {
+            width: 85%;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-bottom: $xsm-gutter;
+            filter: saturate(1);
+            transition: filter 0.3s ease 0s;
+            &:hover {
+                filter: saturate(1);
+            }
+        }
+        &_header {
+            font-family: "Acme", sans-serif;
+            margin: 0 $xsm-gutter;
+            align-self: flex-start;
+            color: $callToAction;
+        }
+        &_reading-time {
+            align-self: flex-start;
+            color: $primaryDark;
+            margin: 0 $xsm-gutter 0 $md-gutter;
+            padding-top: 0.5em;
+            line-height: 0.7;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: -1.8rem;
+                top: 0.1em;
+                display: block;
+                height: 30px;
+                width: 30px;
+                background-image: url("../assets/blog-images/stopwatch.png");
+                background-repeat: no-repeat;
+                background-size: 80%;
+            }
+        }
+        &_content {
+            margin: $xsm-gutter;
+            color: lighten($color: $primaryDark, $amount: 30%);
+            line-height: 1.2;
+        }
+        &_read-more-btn {
+            align-self: flex-start;
+            margin: 0 $xsm-gutter;
+            color: $sm-header-color;
+            font-weight: 600;
+            padding: 0.5rem 0;
+            cursor: pointer;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0rem;
+                width: 87%;
+                height: 4px;
+                border-radius: 10px;
+                background-color: lighten($callToAction, 15%);
+                transform: scale(0);
+                transform-origin: left;
+            }
+            &:hover::after {
+                transform: scale(1);
+                animation: underline-slide 1s ease 0s 1 normal forwards;
+            }
+        }
+        &:hover {
+            filter: saturate(1);
+            box-shadow: 4px 10px 10px 0px
+                lighten($color: $primaryDark, $amount: 50%);
+        }
+    }
+}

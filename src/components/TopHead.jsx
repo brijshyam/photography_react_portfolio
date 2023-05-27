@@ -29,10 +29,10 @@ function TopHead() {
     return (
         <div className="head_container">
             <div className="head__logo">
-                <img src="../public/Logo.svg" alt="Logo" srcSet="" />
+                <img src="/assets/Logo.svg" alt="Logo" srcSet="" />
             </div>
             <div className="head__thanks">
-                <p>Thank you soooooo much</p>
+                <p>Thank you &nbsp; soooooo much</p>
             </div>
             <div
                 className={`head__menu-button ${showMenu ? "open" : ""}`}
@@ -66,7 +66,7 @@ function TopHead() {
                                 <span className="book-us-emoji">
                                     <img
                                         className="emoji-img"
-                                        src="/src/assets/emoji-smile-red.svg"
+                                        src="/assets/emoji-smile-red.svg"
                                         alt=""
                                     />
                                 </span>
@@ -96,7 +96,7 @@ function TopHead() {
                             <p className="wrap-icon-and-link">
                                 <img
                                     className="wa-icon"
-                                    src="/src/assets/whatsapp.svg"
+                                    src="/assets/whatsapp.svg"
                                     alt="WhatsApp"
                                 />{" "}
                                 <span>Reach Out</span>

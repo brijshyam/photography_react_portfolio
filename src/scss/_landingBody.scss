@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 .landing-body {
+    background-image: linear-gradient(
+        to right top,
+        #ff0c78,
+        #ff0c78,
+        #ff7723,
+        #ff0c78,
+        #ff0c78
+    );
+    overflow: hidden;
     margin-top: $m-top * 2;
     &_welcome-text {
         display: flex;

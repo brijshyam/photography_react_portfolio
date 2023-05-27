@@ -174,7 +174,6 @@
             }
         }
         &_link {
-            // outline: 1px solid red;
             display: inline-block;
             min-width: 60vw;
             font-size: 1.2rem;
@@ -182,6 +181,18 @@
             padding: 1rem 0;
             font-weight: 500;
             color: lighten($color: #fff, $amount: 0%);
+            .wrap-icon-and-link {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+            }
+
+            .wa-icon {
+                height: 25px;
+                width: 25px;
+            }
         }
     }
 }

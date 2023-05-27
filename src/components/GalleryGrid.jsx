@@ -4,23 +4,8 @@ import Modal from "./Modal";
 
 function GalleryGrid(props) {
     const [pic, setPic] = useState([]);
-    // const [clickedImage, setClickedImage]= useState([]);
-
-    /* useEffect(() => {
-        const list = fetch("https://picsum.photos/v2/list?page=2&limit=20");
-        list.then((response) => response.json())
-            .then((pic) =>
-                pic.map((item) => ({
-                    ...item,
-                    clicked: false, // add new property to track clicked state
-                }))
-            )
-            .then((pic) => setPic(pic))
-            .catch((error) => console.log(error));
-    }, []); */
 
     useEffect(() => {
-        // console.log(Images);
         const updatedImages = Images.map((image) => ({
             ...image,
             clicked: false,

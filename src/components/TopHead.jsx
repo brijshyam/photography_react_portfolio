@@ -61,14 +61,16 @@ function TopHead() {
                             className="blink-it menu-nav_link"
                             onClick={handleContactUsClick}
                         >
-                            Book Us Now
-                            <span className="book-us-emoji">
-                                <img
-                                    className="emoji-img"
-                                    src="/src/assets/emoji-smile-red.svg"
-                                    alt=""
-                                />
-                            </span>
+                            <p className="wrap-icon-and-link">
+                                <span>Book Us Now</span>
+                                <span className="book-us-emoji">
+                                    <img
+                                        className="emoji-img"
+                                        src="/src/assets/emoji-smile-red.svg"
+                                        alt=""
+                                    />
+                                </span>
+                            </p>
                         </a>
                     </li>
                     <li className={`menu-nav_item ${showMenu ? "open" : ""}`}>
@@ -91,7 +93,14 @@ function TopHead() {
                     </li>
                     <li className={`menu-nav_item ${showMenu ? "open" : ""}`}>
                         <a href="" className="menu-nav_link">
-                            Reach Out
+                            <p className="wrap-icon-and-link">
+                                <img
+                                    className="wa-icon"
+                                    src="/src/assets/whatsapp.svg"
+                                    alt="WhatsApp"
+                                />{" "}
+                                <span>Reach Out</span>
+                            </p>
                         </a>
                     </li>
                 </ul>

@@ -29,7 +29,7 @@ function TopHead() {
     return (
         <div className="head_container">
             <div className="head__logo">
-                <img src="/src/assets/logo.svg" alt="Logo" srcSet="" />
+                <img src="../public/Logo.svg" alt="Logo" srcSet="" />
             </div>
             <div className="head__thanks">
                 <p>Thank you soooooo much</p>

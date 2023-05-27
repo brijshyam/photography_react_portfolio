@@ -26,14 +26,14 @@ function LandingBody() {
                     translateY={[-5, 70, "easeInOutCubic"]}
                 >
                     <img
-                        src="/src/assets/Portfolio-65.jpg"
+                        src="assets/Portfolio-65.jpg"
                         alt=""
                         className="welcome-hero1"
                     />
                 </Parallax>
                 <Parallax scale={[0.2, 1.2]} speed={10} y={[50]}>
                     <img
-                        src="/src/assets/Portfolio-1.jpg"
+                        src="assets/Portfolio-1.jpg"
                         alt=""
                         className="welcome-hero2"
                     />

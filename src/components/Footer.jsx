@@ -7,14 +7,14 @@ function Footer(props) {
             <footer>
                 <img
                     className="footer-image"
-                    src="/src/assets/Portfolio-228.jpg"
+                    src="assets/Portfolio-228.jpg"
                     alt=""
                     srcset=""
                 />
                 <div className="footer_content">
                     <img
                         className="star-pic"
-                        src="/src/assets/star-pic.png"
+                        src="assets/star-pic.png"
                         alt=""
                     />
                     <h1 className="thanks">Thanks </h1>
@@ -22,7 +22,11 @@ function Footer(props) {
                 </div>
                 <div className="footer_social-container">
                     <span className="social">
-                        <a className="social_link" href="">
+                        <a
+                            className="social_link"
+                            href="https://www.instagram.com/a1clickswithbrij"
+                            target="_blank"
+                        >
                             <box-icon
                                 className="instagram"
                                 type="logo"
@@ -34,7 +38,11 @@ function Footer(props) {
                         </a>
                     </span>
                     <span className="social">
-                        <a className="social_link" href="">
+                        <a
+                            className="social_link"
+                            href="https://in.pinterest.com/brijshyam51maurya/"
+                            target="_blank"
+                        >
                             <box-icon
                                 className="pinterest"
                                 type="logo"
@@ -46,7 +54,11 @@ function Footer(props) {
                         </a>
                     </span>
                     <span className="social">
-                        <a className="social_link" href="">
+                        <a
+                            className="social_link"
+                            href="https://brijshyam.netlify.app/#"
+                            target="_blank"
+                        >
                             <box-icon
                                 className="twitter"
                                 type="logo"
@@ -58,7 +70,11 @@ function Footer(props) {
                         </a>
                     </span>
                     <span className="social">
-                        <a className="social_link" href="">
+                        <a
+                            className="social_link"
+                            href="mailto:brijshyam51maurya@outlook.com"
+                            target="_blank"
+                        >
                             <box-icon
                                 className="envelope"
                                 name="envelope"

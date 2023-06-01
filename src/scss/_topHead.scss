@@ -21,7 +21,7 @@
             width: 100vw;
             height: 2px;
             background: lighten($primaryDark, 50%);
-            z-index: -1;
+            z-index: -99;
             // box-shadow: 1px 10px 15px 1px $secondaryColor;
         }
     }
@@ -31,32 +31,15 @@
     }
     &__thanks {
         overflow: hidden;
-        // outline: 1px solid red;
         color: $secondaryColor;
-        width: 50vw;
-        height: 20px;
+        margin-left: 1rem;
+        width: 150px;
+        height: 30px;
         position: relative;
-        transform: translateX(13vw);
-        transition: all ease 1s linear;
-        &::after {
-            content: "...";
-            position: absolute;
-            right: 7.5rem;
-            top: 0;
-            bottom: 0;
-            width: 1rem;
-        }
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 4.3rem;
-            height: inherit;
-            width: inherit;
-            background-color: white;
-        }
-        &:hover {
-            animation: reveal-left 1s ease 0s 1 normal forwards;
+        transition: all ease 2s;
+        animation: thanks 2s linear 2s normal infinite both;
+        @include desktop {
+            margin: 0 10rem;
         }
     }
     &__menu-button {
@@ -130,6 +113,10 @@
     opacity: 0.98;
     visibility: hidden;
     z-index: 10;
+    z-index: 999;
+    @include desktop {
+        z-index: 999;
+    }
     &.open {
         visibility: visible;
     }

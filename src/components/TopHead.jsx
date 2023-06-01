@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "./Footer";
 
 function TopHead() {
+    const navigateTo = useNavigate();
     const [showMenu, setShowMenu] = useState(false);
     function toggleMenu() {
         setShowMenu(!showMenu);
     }
-    const navigateTo = useNavigate();
 
     const handleContactUsClick = (e) => {
         e.preventDefault();
@@ -25,14 +24,22 @@ function TopHead() {
         e.preventDefault();
         navigateTo("/blogs");
     };
+    const logoClickHandler = () => {
+        navigateTo("/");
+    };
 
     return (
         <div className="head_container">
             <div className="head__logo">
-                <img src="/assets/Logo.svg" alt="Logo" srcSet="" />
+                <img
+                    onClick={logoClickHandler}
+                    src="/assets/Logo.svg"
+                    alt="Logo"
+                    srcSet=""
+                />
             </div>
             <div className="head__thanks">
-                <p>Thank you &nbsp; soooooo much</p>
+                <p>Thank you for visiting...</p>
             </div>
             <div
                 className={`head__menu-button ${showMenu ? "open" : ""}`}

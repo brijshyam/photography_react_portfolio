@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
 import TopHead from "./TopHead";
+import emailjs from "@emailjs/browser";
+import DetailsSentConfirmation from "./FormSubmitConfrimation";
+import { useNavigate } from "react-router-dom";
 
 function ContactForm() {
+    const navigatTo = useNavigate();
     const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: "",
+        name: "Brij Shyam",
+        email: "brij@email.com",
+        phone: "9800000000",
+        message:
+            "Hi Brij, I wanted to discuss my upcoming pre-wedding plans with you. Please let me know when can we schedule a meet",
     });
-    const [submitMessage, setSubmitMessage] = useState("");
+    const [formSubmitted, setFormSubmitted] = useState(false);
     const submitHandler = (event) => {
         event.preventDefault();
-        fetch("http://localhost:3000/submit-form", {
+        /* fetch("http://localhost:3000/submit-form", {
             method: "POST",
             body: JSON.stringify(formData),
             headers: {
@@ -20,11 +26,23 @@ function ContactForm() {
         })
             .then((response) => response.json())
             .then((data) => {
-                setSubmitMessage("Hang tight, We'll revert soon!!!");
+                setformSubmitted("Hang tight, We'll revert soon!!!");
                 // console.log("Form data submitted successfully!");
             })
             .catch((error) => {
                 console.error("Error submitting form data:", error);
+            }); */
+        emailjs
+            .send(
+                "service_7miqyun",
+                "template_7e453mo",
+                formData,
+                "w4IXFO1oe-g1UGRJH"
+            )
+            .then((res) => {
+                // alert("Thanks for Contacting!!!, Brij will revert soon 😊");
+                setFormSubmitted(true);
+                // navigatTo("/form-submit-confirmation");
             });
     };
 
@@ -40,11 +58,12 @@ function ContactForm() {
             <header>
                 <TopHead />
             </header>
+            {formSubmitted && <DetailsSentConfirmation formData={formData} />}
             <div className="contactUs_wrapper">
                 <h1 className="contactUs_form-header">Contact Us</h1>
                 <p className="contactUs_form-description">
-                    Please fill the form up to contact us. We apprecieate your
-                    patience till we get back to you. Thanks...
+                    Please fill the form up to contact us. <br /> We apprecieate
+                    your patience till we get back to you. Thanks...
                 </p>
                 <div className="form-group">
                     <div className="form-group_image">
@@ -52,7 +71,6 @@ function ContactForm() {
                             className="img"
                             src="/src/assets/contact-us.svg"
                             alt=""
-                            srcset=""
                         />
                     </div>
                     <div className="form-group_form-container">
@@ -62,7 +80,7 @@ function ContactForm() {
                                 <input
                                     type="text"
                                     name="name"
-                                    value={formData.name}
+                                    placeholder={formData.name}
                                     onChange={changeHandler}
                                 />
                             </label>
@@ -71,7 +89,7 @@ function ContactForm() {
                                 <input
                                     type="text"
                                     name="email"
-                                    value={formData.email}
+                                    placeholder={formData.email}
                                     onChange={changeHandler}
                                 />
                             </label>
@@ -80,7 +98,7 @@ function ContactForm() {
                                 <input
                                     type="text"
                                     name="phone"
-                                    value={formData.phone}
+                                    placeholder={formData.phone}
                                     onChange={changeHandler}
                                 />
                             </label>
@@ -89,16 +107,13 @@ function ContactForm() {
                                 <textarea
                                     type="text"
                                     name="message"
-                                    value={formData.message}
                                     onChange={changeHandler}
+                                    placeholder={formData.message}
                                 />
                             </label>
                             <button className="submit-btn" type="submit">
                                 Submit
                             </button>
-                            {submitMessage && (
-                                <p className={`success-msg`}>{submitMessage}</p>
-                            )}
                         </form>
                     </div>
                 </div>

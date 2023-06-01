@@ -69,7 +69,7 @@ function SectionTwo() {
                     <span className="letter D">D</span>
                     <span className="letter R">R</span>
                     <span className="letter Aagain">A</span>
-                    <Parallax translateX={-50}>
+                    <Parallax translateX={-12}>
                         <span className="skew-image1 "></span>
                     </Parallax>
                     <span className="skew-image2"></span>
@@ -93,11 +93,7 @@ function SectionTwo() {
                     </div>
 
                     <div className="image-container">
-                        <img
-                            src="/src/assets/Portfolio-219.jpg"
-                            alt=""
-                            srcset=""
-                        />
+                        <img src="/assets/Portfolio-219.jpg" alt="" srcset="" />
                     </div>
                 </div>
             </div>

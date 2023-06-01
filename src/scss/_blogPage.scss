@@ -1,0 +1,44 @@
+.blog-page {
+    position: relative;
+    top: 0%;
+    width: 100%;
+    background-color: lighten($color: $primaryColor, $amount: 10%);
+    z-index: 999;
+    padding: $md-gutter $sm-gutter;
+    color: $secondPrimaryColor;
+    &_wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .blog-title {
+        margin: 1rem 0;
+    }
+    .intro-para {
+        margin: 1rem 0;
+        font-size: 1.1rem;
+    }
+    .blog-container {
+        font-size: 1.1rem;
+        h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+    .close-btn {
+        border: 0px;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        color: $secondPrimaryColor;
+        font-weight: 600;
+        background-color: $card-color;
+        border-radius: 5px;
+        @include transition-ease;
+        &:hover {
+            background-color: $callToAction;
+            color: $primaryColor;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.confirm-container {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin: 0 auto;
+    background-color: #000000c0;
+    z-index: 999;
+
+    .message-wrapper {
+        background-color: $primaryLightColor;
+        width: 90%;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        color: $successMsgColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        @include desktop {
+            width: 30%;
+        }
+        h3 {
+            margin: 2rem 0;
+        }
+        .tick {
+            margin-top: -2rem;
+            margin-bottom: 3rem;
+            width: 50px;
+            background-blend-mode: multiply;
+        }
+        .thanks-para {
+            color: $secondPrimaryColor;
+            text-align: center;
+            font-weight: 600;
+        }
+        .form-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            justify-items: center;
+            align-items: flex-start;
+            color: darken($color: $card-color, $amount: 90%);
+            font-weight: 500;
+            margin-bottom: 2rem;
+
+            .detail-item {
+                margin-left: 1rem;
+            }
+        }
+        .keep-exploring-btn {
+            border: none;
+            font-size: 1.2rem;
+            background-color: $callToAction;
+            font-weight: 600;
+            color: $primaryLightColor;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+            &:hover {
+                background-color: darken($color: $callToAction, $amount: 5%);
+            }
+        }
+    }
+}

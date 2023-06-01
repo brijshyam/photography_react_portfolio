@@ -10,19 +10,22 @@
         align-items: center;
         justify-content: flex-start;
         padding: $sm-gutter;
+        margin: 1rem 0.5rem;
+        @include desktop {
+            width: 60%;
+            margin: 2rem auto;
+        }
         .form-group {
-            // background-color: red;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             &_image {
-                // outline: 3px solid lawngreen;
-                // margin: $md-gutter 0;
                 margin-bottom: $sm-gutter;
                 position: relative;
                 &::after {
-                    // content: "";
+                    content: "";
                     position: absolute;
                     left: 0;
                     right: 0;
@@ -36,15 +39,28 @@
                 }
             }
             &_form-container {
-                // outline: 3px solid black;
-                height: clamp(300px, 45vh, 60vh);
+                width: 100%;
                 .form-control {
-                    // outline: 2px solid green;
+                    width: 100%;
+                    outline: 1px solid $card-color;
+                    border-radius: 5px;
+                    background-color: lighten(
+                        $color: $card-color,
+                        $amount: 20%
+                    );
+                    padding: 1rem;
                     height: inherit;
-                    width: 70vw;
                     display: flex;
                     flex-direction: column;
                     flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    @include desktop {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
                     label {
                         margin: $xsm-gutter 0;
                         color: lighten($color: $primaryDark, $amount: 30%);
@@ -52,11 +68,10 @@
                     input {
                         padding: 0.7rem;
                         width: 100%;
-                        // border-radius: 10px;
+                        border-radius: 2px;
                         outline: none;
                         border: 0px;
                         border-bottom: 2px solid $secondaryColor;
-                        margin: 0.5rem 0;
                     }
                     textarea {
                         width: 100%;
@@ -78,11 +93,6 @@
                         margin: auto;
                         margin-top: $xsm-gutter;
                     }
-                    .success-msg {
-                        margin: auto;
-                        margin: $xsm-gutter 0;
-                        color: $successMsgColor;
-                    }
                 }
             }
         }
@@ -99,5 +109,6 @@
         margin: $sm-gutter 0;
         font-size: 1rem;
         color: lighten($color: $primaryDark, $amount: 30%);
+        text-align: center;
     }
 }

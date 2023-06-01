@@ -104,6 +104,7 @@
             font-weight: 900;
             font-family: "Josefin Sans", sans-serif;
             color: $secondaryColor;
+            margin: 4rem 0;
         }
         .B {
             z-index: -2;
@@ -222,25 +223,24 @@
             background-repeat: no-repeat;
             background-position-x: center;
             position: absolute;
-            // outline: 1px solid red;
             top: -4rem;
             left: 50vw;
-            height: 150px;
-            width: 180px;
+            height: 200px;
+            width: 230px;
             scale: 1.5;
             z-index: -1;
             grid-column: 1/2;
             grid-row: 6/-1;
             transform: rotate(12deg);
             transform-origin: right top;
-            z-index: -2;
+            z-index: -10;
         }
     }
     &_bottom-container {
         overflow: hidden;
         margin: 0 -0.8rem;
         .quote-container {
-            width: clamp(100px, 60vw, 500px);
+            width: clamp(100px, 80vw, 500px);
             height: clamp(50px, 20vh, 400px);
             background-color: $card-color;
             border-bottom: 1px solid $primaryDark;
@@ -286,7 +286,7 @@
             }
         }
         .image-container {
-            margin-top: -1.5rem;
+            margin: 0 auto;
             width: 100vw;
 
             img {

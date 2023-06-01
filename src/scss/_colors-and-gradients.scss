@@ -12,6 +12,7 @@ $imageBorder: rgb(155, 111, 0);
 $gridGalleryBGColor: rgba(0, 0, 0, 0.8);
 $lightBoxOverlayColor: #000000bd;
 $successMsgColor: rgb(11, 146, 11);
+$secondPrimaryColor: #282c3f;
 $menu-gradient: linear-gradient(
     to right top,
     #eaff20,
@@ -55,6 +56,39 @@ $logo-h-w: 2.5rem;
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
 }
+
+@keyframes thanks {
+    0% {
+        opacity: 1;
+        scale: 1;
+        color: $callToAction;
+    }
+
+    50% {
+        opacity: 0.5;
+        scale: 0.9;
+        color: $secondaryColor;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        color: $callToAction;
+    }
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 @keyframes blink {
     0% {
         animation-timing-function: ease-out;

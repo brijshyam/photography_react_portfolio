@@ -1,18 +1,66 @@
 [
     {
         "key": 1,
-        "image": "/src/assets/blog-images/camera-1.jpg",
-        "heading": "Lorem ipsum dolor sit amet consectet",
+        "image": "/assets/blog-images/camera-1.jpg",
+        "mainHeading": "5 Things to keep in mind while planning your pre-wedding",
         "readingTime": "5",
-        "snippet": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quidem amet illum, a deserunt vel laboriosam",
-        "mainContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quidem amet illum, a deserunt vel laboriosam"
+        "snippet": "Pre-Wedding shoot is not just only about taking nice pictures",
+        "introPara": "There is much more to a pre-wedding shoot or engagement session than just taking nice pictures to show off in an album or during your wedding feast. You have the opportunity to create lovely souvenirs that will serve as a record of your connection and your feelings for one another. If you are hiring the same photographer, it's also a terrific way to get to know them before your wedding day.You want your pre-wedding shoot to go well because there is so much on the line, including your wallet. Whether you're shooting indoors or outdoors, in Singapore or abroad, we have some extremely useful pre-wedding shoot advice for you!",
+        "mainContent": [
+            {
+                "contentHeading": "1. SCHEDULE YOUR FACIALS.",
+                "content": "Plan to have your facial sessions two weeks in advance of your pre-wedding shoot date so that you don’t have unsightly red spots or other scars during your shoot. Don’t try a new product or procedure either, in case you get an unexpected allergic reaction that doesn’t resolve in time."
+            },
+
+            {
+                "contentHeading": "2. AVOID BLOAT.",
+                "content": "The day before your shoot, don’t eat too much salt to avoid bloating and a puffy face. Stay hydrated, which will help flush toxins and give your skin a healthy glow."
+            },
+
+            {
+                "contentHeading": "3. GET A GOOD NIGHT’S SLEEP.",
+                "content": "They don’t call it beauty sleep for nothing. Avoid dark circles or tired skin by getting at least eight hours of sleep in the days leading up to your shoot."
+            },
+
+            {
+                "contentHeading": "4. DON’T CONDITION YOUR HAIR.",
+                "content": "Ironically, soft and silky hair doesn’t look good in photos, because it’s difficult to style, and doesn’t hold its shape. The night and morning before your shoot, skip the conditioner and any hair serums. Dry and rough hair will have more volume, be easier to style, and hold its shape for longer."
+            },
+
+            {
+                "contentHeading": "5. SAY NO TO TAN LINES.",
+                "content": "In the months leading up to your shoot, avoid spending too much time in the sun, and forego that beach holiday, so you don’t get unsightly tan lines that last forever in your pre-wedding photos."
+            }
+        ]
     },
     {
         "key": 2,
-        "image": "/src/assets/blog-images/girl-with-camera.jpg",
-        "heading": "Lorem ipsum dolor sit amet consectet",
+        "image": "/assets/blog-images/girl-with-camera.jpg",
+        "mainHeading": "Choosing the Perfect Photographer for Your Pre-Wedding Shoot",
         "readingTime": "5",
-        "snippet": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quidem amet illum, a deserunt vel laboriosam",
-        "mainContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit.Quidem amet illum, a deserunt vel laboriosam"
+        "snippet": "Find a friendly, well-behaved, and creative photographer with excellent communication skills. Someone who understands your vision, has clear ideas, and excels in planning",
+        "introPara": "Planning your pre-wedding shoot is an exciting part of your wedding journey, and choosing the right photographer is crucial to capturing those cherished moments. When selecting a photographer, several qualities should be considered to ensure a seamless and memorable experience.",
+        "mainContent": [
+            {
+                "contentHeading": "Choosing a Friendly and Professional Photographer",
+                "content": "First and foremost, opt for a photographer who is friendly and approachable. You want someone who makes you feel comfortable and at ease, allowing your genuine personalities to shine through the photographs. A photographer who is well-behaved and professional will ensure a pleasant atmosphere throughout the shoot."
+            },
+            {
+                "contentHeading": "Effective Communication for Personalized Shoots",
+                "content": "Effective communication is key when collaborating with a photographer. Look for someone who actively listens to your ideas, understands your vision, and offers valuable suggestions. Clear communication helps in translating your desires into captivating images, making your pre-wedding shoot truly personalized."
+            },
+            {
+                "contentHeading": "Unleashing Creativity: Capturing Magical Moments",
+                "content": "Creativity is another essential trait to seek in a photographer. They should possess a keen eye for unique perspectives, angles, and lighting, resulting in stunning and artistic photographs that go beyond the ordinary. A creative photographer will bring out the magic and beauty of your pre-wedding moments."
+            },
+            {
+                "contentHeading": "Well-Defined Plans: Ensuring a Seamless Shoot",
+                "content": "Furthermore, a photographer with clear ideas and a well-defined plan is crucial for a successful shoot. They should have a vision for the shoot, including locations, poses, and themes, ensuring a seamless flow of events and maximizing the time available. A well-planned pre-wedding shoot captures all the desired moments efficiently."
+            },
+            {
+                "contentHeading": "Choosing the Right Photographer: Portfolio and Reviews",
+                "content": "When selecting your photographer, consider their portfolio and previous work to gauge their skills and expertise. Look for versatility, attention to detail, and the ability to capture emotions authentically. Reviews and recommendations from past clients can also provide valuable insights into their professionalism and quality of work."
+            }
+        ]
     }
 ]

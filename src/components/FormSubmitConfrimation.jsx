@@ -1,5 +1,4 @@
 import React from "react";
-import tick from "/assets/green-tick.gif";
 import { useNavigate } from "react-router-dom";
 
 function DetailsSentConfirmation({ formData }) {
@@ -8,7 +7,11 @@ function DetailsSentConfirmation({ formData }) {
         <div className="confirm-container">
             <div className="message-wrapper">
                 <h3>Your details sent successfully!</h3>
-                <img className="tick" src={tick} alt="Green Tick " />
+                <img
+                    className="tick"
+                    src="https://res.cloudinary.com/drdlkuxin/image/upload/v1685710819/green-tick_jd8bmh.gif"
+                    alt="Green Tick "
+                />
                 <p className="form-details">
                     Details submitted by you are :
                     <span className="detail-item">

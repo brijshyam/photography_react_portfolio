@@ -14,7 +14,7 @@ function ContactForm() {
         message:
             "Hi Brij, I wanted to discuss my upcoming pre-wedding plans with you. Please let me know when can we schedule a meet",
     });
-    const [formSubmitted, setFormSubmitted] = useState(false);
+    const [formSubmitted, setFormSubmitted] = useState(true);
     const submitHandler = (event) => {
         event.preventDefault();
         /* fetch("http://localhost:3000/submit-form", {

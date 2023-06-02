@@ -4,7 +4,7 @@ This a portfolio website of my own self which i pursued as a hobby during the co
 
 ## Deployement URL
 
-https://photography-react-portfolio.vercel.app/
+https://preciousclickswithbrij.vercel.app/
 
 ## Image Hosting
 

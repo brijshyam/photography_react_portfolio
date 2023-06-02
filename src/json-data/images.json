@@ -2,97 +2,97 @@
     {
         "id": 1,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-1.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693445/photography-portfolio/ivzsqh1d0y6jus6dmcar.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 2,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-80.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693441/photography-portfolio/t7fkrdm80teqsn1punh8.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 3,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-90.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693442/photography-portfolio/f0emokv67jyzd3aekkjj.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 4,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-114.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693442/photography-portfolio/qzi2h5knewzb5kumitlh.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 5,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-197.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693443/photography-portfolio/dqhwni3niv7gtaeq5kyt.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 6,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-178.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693443/photography-portfolio/ijc3xzlwnpr7rgt3umon.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 7,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-18.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693442/photography-portfolio/bwmaafijpykxx6wwznb3.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 8,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-5.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693445/photography-portfolio/nqyadkbrwcwh0wjitgbx.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 9,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-65.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693441/photography-portfolio/ztxx4ube0khewtkoe60f.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 10,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-171.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693443/photography-portfolio/d7asryyflgky0o1s02je.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 11,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-185.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693443/photography-portfolio/obja4zc9hltfasovjhq7.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 12,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-296.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693444/photography-portfolio/gbfvodzffayu1gqvwynm.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 14,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-177.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693443/photography-portfolio/dclshvdnomoyybehck7z.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 13,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-185.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693442/photography-portfolio/ptlahqzhslaexa2tqz7y.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 15,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-219.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693443/photography-portfolio/vdyvsstezvg2fogp2oe7.jpg",
         "orientaton": "portrait"
     },
     {
         "id": 16,
         "name": "portfolio-image1",
-        "path": "/assets/Portfolio-228.jpg",
+        "path": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685693444/photography-portfolio/slenx6qo6ae2wqeneu54.jpg",
         "orientaton": "portrait"
     }
 ]

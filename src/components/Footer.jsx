@@ -7,7 +7,7 @@ function Footer(props) {
             <footer>
                 <img
                     className="footer-image"
-                    src="assets/Portfolio-228.jpg"
+                    src="https://res.cloudinary.com/drdlkuxin/image/upload/v1685693444/photography-portfolio/z9nq4sfe0swb6cxvrowm.jpg"
                     alt=""
                     srcset=""
                 />

@@ -1,7 +1,7 @@
 [
     {
         "key": 1,
-        "image": "/assets/blog-images/camera-1.jpg",
+        "image": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685706558/camera-1_j8frd6.jpg",
         "mainHeading": "5 Things to keep in mind while planning your pre-wedding",
         "readingTime": "5",
         "snippet": "Pre-Wedding shoot is not just only about taking nice pictures",
@@ -35,7 +35,7 @@
     },
     {
         "key": 2,
-        "image": "/assets/blog-images/girl-with-camera.jpg",
+        "image": "https://res.cloudinary.com/drdlkuxin/image/upload/v1685706890/girl-with-camera_Large_whx1jc.jpg",
         "mainHeading": "Choosing the Perfect Photographer for Your Pre-Wedding Shoot",
         "readingTime": "5",
         "snippet": "Find a friendly, well-behaved, and creative photographer with excellent communication skills. Someone who understands your vision, has clear ideas, and excels in planning",

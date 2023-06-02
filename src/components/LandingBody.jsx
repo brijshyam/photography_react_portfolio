@@ -30,22 +30,22 @@ function LandingBody() {
             </div>
             <div className="landing-body_welcome-heroes">
                 <Parallax
-                    scale={[0.5, 1.7]}
-                    translateY={[-5, 70, "easeInOutCubic"]}
+                    scale={[0.2, 1.7]}
+                    translateY={[0, 0, "easeInOutCubic"]}
                 >
                     <img
-                        src="assets/Portfolio-65.jpg"
+                        src="https://res.cloudinary.com/drdlkuxin/image/upload/v1685693441/photography-portfolio/f1pyze8cm9q5rxvowtbm.jpg"
                         alt=""
                         className="welcome-hero1"
                     />
                 </Parallax>
                 <Parallax
-                    easing={[1, -0.75, 0.5, 1.34]}
-                    translateX={[0, 100]}
-                    y={-40}
+                    scale={[0.2, 1.5]}
+                    y={[50]}
+                    translateY={[-5, 0, "easeInOutCubic"]}
                 >
                     <img
-                        src="assets/Portfolio-1.jpg"
+                        src="https://res.cloudinary.com/drdlkuxin/image/upload/v1685693445/photography-portfolio/iu3f8pgam1wselahhvrz.jpg"
                         alt=""
                         className="welcome-hero2"
                     />

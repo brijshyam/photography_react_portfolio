@@ -93,7 +93,11 @@ function SectionTwo() {
                     </div>
 
                     <div className="image-container">
-                        <img src="/assets/Portfolio-219.jpg" alt="" srcset="" />
+                        <img
+                            src="https://res.cloudinary.com/drdlkuxin/image/upload/v1685693443/photography-portfolio/vdyvsstezvg2fogp2oe7.jpg"
+                            alt=""
+                            srcset=""
+                        />
                     </div>
                 </div>
             </div>
